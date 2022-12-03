@@ -1,0 +1,7 @@
+consider a dialog box that prompts the user to submit  photo:
+    1. can only upload jpng format
+    2.a file with a size of 30kb
+    2. resolution shold be 137*177
+
+    if any of the abowe condition violate system show a error.
+    all conditions satisfied for the successfully upload the photo.
