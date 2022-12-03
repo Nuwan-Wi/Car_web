@@ -9,34 +9,81 @@
 </head>
 <body>
     <div class="loginForm">
-        <br>
-        <label style="font-size: 30px;">Create Account</label><br>
-        
-        <div class="signin">
-            <input type="submit" value="Sign up with Google" style="height:40px;width:200px; font-size:16px; margin-top: 30px;" >
-            <input type="submit" value="Sign up with Facebook" style="height:40px;width:200px; font-size:16px; margin-top: 30px;" >
-        </div>
+        <!-- <div class="button-box">
+            <div class="btn"></div>
+            <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            <button type="button" class="toggle-btn" onclick="login()">Login</button>
+        </div> -->
+        <div class="form-box">
+            <form id="register" class="input-form">
+                <br>
+                <label style="font-size: 30px;">Create Account</label><br>
+                
+                <div class="signin">
+                    <input type="submit" value="Sign up with Google" style="height:40px;width:200px; font-size:16px; margin-top: 30px;" >
+                    <input type="submit" value="Sign up with Facebook" style="height:40px;width:200px; font-size:16px; margin-top: 30px;" >
+                </div>
 
-        <Label style="font-size: 20px;">OR</Label>
+                <Label style="font-size: 20px;">OR</Label>
 
-        <div class="form">
-            <label >First Name : </label> <input type="text" name="f_name" required  style="font-size:20px; border-width: 0px; color: whitesmoke;"><br/>
-            <div class="line"></div>
-            <label>Last Name : </label><input type="text" name="l_name" required  style="font-size:20px; border-width: 0px; color: whitesmoke;""><br/>
-            <div class="line"></div>
-            <label>NIC Number : </label><input type="text" name="nic" required  style="font-size:20px; border-width: 0px; color: whitesmoke;""><br/>
-            <div class="line"></div>
-            <label>City : </label><input type="text" name="city" required  style="font-size:20px; border-width: 0px; color: whitesmoke;""><br/>
-            <div class="line"></div>
-            <label>Email : </label><input type="text" name="email" required  style="font-size:20px; border-width: 0px; color: whitesmoke;""><br/>
-            <div class="line"></div>
-            <label>Password : </label><input type="password" name="pswd" required  style="font-size:20px; border-width: 0px; color: whitesmoke;""><br/>
-            <div class="line"></div>
+                <div class="form">
+                    <label >First Name : </label> <input type="text" name="f_name" required  style="font-size:20px; border-width: 0px; color: whitesmoke;"><br/>
+                    <div class="line"></div>
+                    <label>Last Name : </label><input type="text" name="l_name" required  style="font-size:20px; border-width: 0px; color: whitesmoke;""><br/>
+                    <div class="line"></div>
+                    <label>NIC Number : </label><input type="text" name="nic" required  style="font-size:20px; border-width: 0px; color: whitesmoke;""><br/>
+                    <div class="line"></div>
+                    <label>City : </label><input type="text" name="city" required  style="font-size:20px; border-width: 0px; color: whitesmoke;""><br/>
+                    <div class="line"></div>
+                    <label>Email : </label><input type="text" name="email" required  style="font-size:20px; border-width: 0px; color: whitesmoke;""><br/>
+                    <div class="line"></div>
+                    <label>Password : </label><input type="password" name="pswd" required  style="font-size:20px; border-width: 0px; color: whitesmoke;""><br/>
+                    <div class="line"></div>
+                </div>
+                <input type="submit" value="Register" style="height:40px;width:400px; font-size:20px; margin-left: 20px; margin-bottom: 30px;" ><br>
+                <label>Already have an account.</label>
+                <button type="button" onclick="login()">LogIn</button>
+            </form>
+            <form id="login" class="input-form">
+                <br>
+                <label style="font-size: 30px;">LogIn to Account</label><br>
+                
+                <div class="signin">
+                    <input type="submit" value="login with Google" style="height:40px;width:200px; font-size:16px; margin-top: 30px;" >
+                    <input type="submit" value="login with Facebook" style="height:40px;width:200px; font-size:16px; margin-top: 30px;" >
+                </div>
+
+                <Label style="font-size: 20px;">OR</Label>
+
+                <div class="form">
+                    <label>Email : </label><input type="text" name="email" required  style="font-size:20px; border-width: 0px; color: whitesmoke;""><br/>
+                    <div class="line"></div>
+                    <label>Password : </label><input type="password" name="pswd" required  style="font-size:20px; border-width: 0px; color: whitesmoke;""><br/>
+                    <div class="line"></div>
+                </div>
+                <input type="submit" value="LogIn" style="height:40px;width:400px; font-size:20px; margin-left: 20px; margin-bottom: 30px;" ><br>
+                <label>Already have an account.</label>
+                <button type="button" onclick="register()">Register</button>            
+            </form>
         </div>
-        <input type="submit" value="Register" style="height:40px;width:400px; font-size:20px; margin-left: 20px; margin-bottom: 30px;" ><br>
-        <label>Already have an account.</label>
-        <a href="login.html" >Log In</a>
     </div>
-    
+    <script>
+        var x = document.getElementById("register");
+        var y = document.getElementById("login");
+        var z = document.getElementById("btn")
+
+        function login(){
+            x.style.left = "-150%";
+            y.style.left = "20%";
+            z.style.left = "50%"
+        }
+
+        function register(){
+            x.style.left = "20%";
+            y.style.left = "-150%";
+            z.style.left = "0%"
+        }
+
+    </script>
 </body>
 </html>

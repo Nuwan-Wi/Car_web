@@ -198,4 +198,46 @@ body
     justify-content: baseline;
     margin-bottom: 30px;
   }
+
+  .form-box{
+    overflow: hidden;
+  }
+  .button-box{
+    margin-top: 3%;
+    margin-left: 25%;
+    width: 50%;
+    position: relative;
+    box-shadow: 0 0 20px 9px #707070;
+    border-radius: 30px;
+  }
+  .toggle-btn{
+    font-size: 24px;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+  }
   
+  .btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #40D3DC;
+    border-radius: 30px;
+    transition: .5s;
+    left: 0%;
+  }
+  .input-form{
+    position: absolute;
+  }
+
+  #register{
+    left: 20%;
+  }
+  #login{
+    left: 150%;
+  }
