@@ -7,14 +7,18 @@
     <title>SignUp</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body >
+    
+    
     <div class="loginForm">
+        
         <!-- <div class="button-box">
             <div class="btn"></div>
             <button type="button" class="toggle-btn" onclick="register()">Register</button>
             <button type="button" class="toggle-btn" onclick="login()">Login</button>
         </div> -->
         <div class="form-box">
+            
             <form id="register" class="input-form">
                 <br>
                 <label style="font-size: 30px;">Create Account</label><br>
@@ -42,7 +46,7 @@
                 </div>
                 <input type="submit" value="Register" style="height:40px;width:400px; font-size:20px; margin-left: 20px; margin-bottom: 30px;" ><br>
                 <label>Already have an account.</label>
-                <button type="button" onclick="login()">LogIn</button>
+                <button type="button" onclick="login()" style="border: 0; font-weight:bold; background: rgb(255, 255, 255)">LogIn</button>
             </form>
             <form id="login" class="input-form">
                 <br>
@@ -63,10 +67,12 @@
                 </div>
                 <input type="submit" value="LogIn" style="height:40px;width:400px; font-size:20px; margin-left: 20px; margin-bottom: 30px;" ><br>
                 <label>Already have an account.</label>
-                <button type="button" onclick="register()">Register</button>            
+                <button type="button" onclick="register()" style="border: 0; font-weight:bold; background: rgb(255, 255, 255);">Register</button>            
             </form>
         </div>
+        <img src="/assets/nomad.behance2_4x.png" alt="" style="position: absolute; width: 100%; bottom: 10%; left:-70%;">
     </div>
+    
     <script>
         var x = document.getElementById("register");
         var y = document.getElementById("login");
