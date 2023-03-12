@@ -204,6 +204,34 @@ body
     color: #707070;
     }
 
+    .body_3rd_part{
+      margin-top: 20%;
+      color: #707070;
+      font-size: 30px;
+      align-content: center;
+      display: flex;
+      /* position: absolute; */
+      flex-direction: column;
+      }
+
+      .page_03{
+        width: fit-content;
+
+      }
+
+      .title_card{
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px #ccc;
+        padding: 10px;
+        height: 275px;
+        width: 600px;
+        margin: 1%;
+        margin-left: 2%;
+        float: left
+      }
+
+
 /* -------------------------------------------signup page---------------------------------------- */
   
   .loginForm{
