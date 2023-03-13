@@ -16,22 +16,13 @@
     <script>
       $(function(){
         $('#footer').load('footer.html');
+        $('#header').load('head.html');
       });
     </script>
 </head>
-<body>
+<div>
   <div class="heaader_1st">
-    <header>
-        <div class="navbar">
-            <a href="index.html">Brand New</a>
-            <a href="">Used</a>
-            <a href="">sell Your Car</a>
-            <a href="">About Us</a>
-            <a href="signup.html">Sign Up
-              <!-- <span class="material-symbols-outlined" style="font-size: 30px; vertical-align:text-top; margin-left: 10px;">person_filled</span> -->
-            </a> 
-        </div>
-    </header>
+    <div  id="header" include-html="head.html"></div>
     <div class="slider">
         <div class="slides">
           <!--radio buttons start-->
@@ -74,6 +65,7 @@
       </div>
       <!--image slider end-->
     </div>
+  </div>
     <div class="body_2nd_part">
       
       <label style="font-size: 60px;">What are You Looking For</label>
@@ -117,6 +109,20 @@
         </div>
       </div>
       <label for="">More Brand New Cars</label>
+      <div class="page_03">
+        <div class="title_card">
+          <h2>This is a title card</h2>
+        </div>
+        <div class="title_card">
+          <h2>This is a title card</h2>
+        </div>
+        <div class="title_card">
+          <h2>This is a title card</h2>
+        </div>
+        <div class="title_card">
+          <h2>This is a title card</h2>
+        </div>
+      </div>
       
     </div>
 
@@ -124,7 +130,7 @@
     
     
     
-    <div id="footer"></div>
+    <div id="footer" include-html="footer.html"/>
 
     <script type="text/javascript">
     var counter = 1;
