@@ -7,7 +7,6 @@ body
 {
     background: #e6e6e6;
     margin: 0;
-    padding: 0;
     height: 100vh;
     justify-content: center;
     width: 100%;
@@ -22,7 +21,7 @@ body
 
 .navbar {
     overflow: hidden;
-    width: 700px;
+    width: 800px;
     height: 50px;
     background-color: rgb(255, 255, 255);
     float: right;
@@ -215,8 +214,8 @@ body
       }
 
       .page_03{
-        width: fit-content;
-
+        width: 100%;
+        border: 1px solid red;
       }
 
       .title_card{
@@ -225,10 +224,9 @@ body
         box-shadow: 0 2px 5px #ccc;
         padding: 10px;
         height: 275px;
-        width: 600px;
-        margin: 1%;
-        margin-left: 2%;
-        float: left
+        min-width: 500px;
+        float: left;
+        margin: 30px;
       }
 
 
